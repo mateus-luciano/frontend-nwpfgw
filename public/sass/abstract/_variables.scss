@@ -1,11 +1,18 @@
 // ==========================================================================
 // Colors
 // ==========================================================================
+$global-font-size        : 20px;
+$global-font-size-mobile : 14px;
 
-$header-primary-color: rgb(73, 136, 138);
-$header-secundary-color: rgb(255, 136, 0);
-$header-button-lighter: rgba(109, 109, 109, 0.733);
-$header-button-darker: rgba(10, 10, 10, 0.733);
+$header-primary-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(1,138,166,1) 100%);
+//$header-secundary-color: rgb(255, 136, 0);
+$box-shadow-default: 0px 30px 50px rgba(0,0,0,0.5);
+$header-secundary-color: #000;
+
+$background-color: #f0f0f7;
+
+$button-color-lighter: cadetblue;
+$button-color-darker: rgb(14, 60, 61);
 
 $header-colors: (
   'primary-color': rgb(73, 136, 138),
@@ -14,24 +21,23 @@ $header-colors: (
   'link-color': #00f,
   'button-color-lighter': rgb(49, 218, 167),
   'button-color-darker': rgb(22, 107, 82),
-);
+  );
+  
+  $primary-color: #ff0;
+  $Secundary-color: papayawhip;
+  $text-color: #fff;
+  $link-color: #00f;
+  $buttonColorLighter: cadetblue;
+  $buttonColorDarker: rgb(14, 60, 61);
+  $navButtonLighter: #aaa;
+  $navButtonDarker: #68213e;
 
-$primary-color: #ff0;
-$Secundary-color: papayawhip;
-$background-color: #f0f0f7;
-$text-color: #fff;
-$link-color: #00f;
-$buttonColorLighter: cadetblue;
-$buttonColorDarker: rgb(14, 60, 61);
-$navButtonLighter: #aaa;
-$navButtonDarker: #68213e;
-$button-color-lighter: cadetblue;
-$button-color-darker: rgb(14, 60, 61);
-
-$base-colors: (
-  'red': #f00,
-  'yellow': #ff0,
-);
+  
+  $base-colors: (
+    'red': #f00,
+    'yellow': #ff0,
+    );
+    
 
 
 // webfatorial
@@ -75,7 +81,6 @@ $social-media-colors: (
 
 
 
-
 // ==========================================================================
 // Measures
 // ==========================================================================
@@ -84,7 +89,6 @@ $global-max-width-raw: 780;
 $global-max-width    : rem($global-max-width-raw);
 
 //$global-font-size  : rem(18);
-$global-font-size  : 18px;
 $global-line-height: 1.5;
 $global-radius     : rem(6);
 $global-module-size: rem(30);

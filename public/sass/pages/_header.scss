@@ -1,0 +1,67 @@
+header {
+    width: 100vw;
+    font-size: $global-font-size;
+    @include breakpoint(small-only) {
+        font-size: $global-font-size-mobile;
+    }
+    
+    .container-header {
+        @include flex-center();
+        @include flex-direction-column();
+        width: inherit;
+        height: 160px;
+        background: $header-primary-color;
+        @include breakpoint(small-only) {
+            height: 100px;
+        }
+
+        img {
+            width: 80px;
+            height: 70px;
+            margin-bottom: 10px;
+            @include breakpoint(small-only) {
+                width: 40px;
+                height: 35px;
+            }
+        }
+
+        h1 {
+            font-size: 1.4em;
+            font-weight: 600;
+            @include breakpoint(small-only) {
+                font-size: 1em;
+            }
+        }
+
+        h2 {
+            font-size: 1.1em;
+            font-weight: 500;
+            @include breakpoint(small-only) {
+                font-size: .8em;
+            }
+        }
+    }
+
+    .nav-bar {
+        @include flex-center();
+        width: inherit;
+        height: 40px;
+        background: $header-secundary-color;
+        @include breakpoint(small-only) {
+            @include flex-space-around();
+            height: 35px;
+        }
+
+        p {
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            margin: 0 60px;
+            color: #fff;
+            @include breakpoint(small-only) {
+                font-size: .8em;
+                margin: 0;
+            }
+        }
+    }
+}

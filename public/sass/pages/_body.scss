@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +12,27 @@ body {
     height: 100%;
     background: $background-color;
     font-family: 'Poppins', sans-serif;
+}
+
+.absolute-position {
+    position: absolute;
+    background: $header-primary-color;
+    top: 160px;
+    right: 0;
+    @include breakpoint(small-only) {
+        top: 100px;
+    }
+}
+
+.fixed-position {
+    position: fixed;
+    background: $header-primary-color;
+    border-top: 2px solid $header-secundary-color;
+    top: 0;
+    right: 0;
+    @include breakpoint(small-only) {
+        
+    }
 }
 
 .error {
