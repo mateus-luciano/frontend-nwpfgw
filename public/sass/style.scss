@@ -10,21 +10,17 @@
 @import './abstract/flex-box';
 @import './abstract/breakpoint';
 @import './abstract/keyframes';
-@import './abstract/z-index';
 
 
 // ==========================================================================
-// Base
+// Pages
 // ==========================================================================
 
 
-@import './base/main';
-
-
-// ==========================================================================
-// Page
-// ==========================================================================
-
-// @import './';
-
-
+@import './pages/body';
+@import './pages/header';
+@import './pages/about';
+@import './pages/informations';
+@import './pages/skills';
+@import './pages/contact';
+@import './pages/footer';
