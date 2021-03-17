@@ -59,10 +59,10 @@ body {
 
 .absolute-position {
   position: absolute;
+  width: 100vw;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#018aa6));
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #018aa6 100%);
   top: 160px;
-  right: 0;
 }
 
 @media (max-width: 37.4375em) {
@@ -75,9 +75,8 @@ body {
   position: fixed;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#018aa6));
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #018aa6 100%);
-  border-top: 2px solid #000;
+  border-top: 3px solid #000;
   top: 0;
-  right: 0;
 }
 
 .neutral {
@@ -264,20 +263,6 @@ header .nav-bar p {
   #about .container-about {
     width: 98%;
     height: 98%;
-  }
-}
-
-@media (max-width: 74.9375em) {
-  #about .container-about {
-    width: 90%;
-    height: 90%;
-  }
-}
-
-@media (min-width: 75em) {
-  #about .container-about {
-    width: 98%;
-    height: 70%;
   }
 }
 
