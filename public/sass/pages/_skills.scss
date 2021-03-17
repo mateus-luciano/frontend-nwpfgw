@@ -1,0 +1,62 @@
+#skills {
+    width: 100vw;
+    height: 100vh;
+    font-size: $font-size;
+    background: coral;
+
+    .top-bar {
+        @include flex-space-around();
+        width: inherit;
+        background: lightcoral;
+        @include breakpoint(small-only) {}
+
+        .container-comments {
+            @include flex-direction-row();
+            @include breakpoint(small-only) {}
+
+            .show-comments-field {
+                @include breakpoint(small-only) {}
+            }
+
+            .add-comments-field {
+                i {
+                    font-size: 1.4em;
+                    margin: 0 10px;
+                    @include breakpoint(small-only) {}
+                }
+            }
+        }
+    }
+
+    .container-skills {
+        @include flex-center();
+        width: inherit;
+        height: inherit;
+        background: lawngreen;
+        
+        .main {
+            @include flex-space-between();
+            background: lightseagreen;
+            width: 90%;
+            height: 90%;
+
+            nav {
+                @include flex-direction-column();
+                @include flex-center();
+                width: 100px;
+                height: inherit;
+                background: lightblue;
+                i {
+                    font-size: 3em;
+                }
+            }
+    
+            .skills-content {
+                width: 90%;
+                height: 100%;
+                background: crimson;
+            }
+        }
+    }
+
+}

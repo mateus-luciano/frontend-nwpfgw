@@ -2,30 +2,118 @@
     width: 100vw;
     height: 100vh;
     font-size: $font-size;
-    background: red;
     padding-top: 60px;
+    position: relative;
+    @include breakpoint(small-only) {
+        font-size: $font-size-mobile;
+    }
+
+    .fa-chevron-left {
+        position: absolute;
+        font-size: 5em;
+        top: 100px;
+        left: 40px;
+        cursor: pointer;
+        @include breakpoint(small-only) {
+            font-size: 3em;
+            left: 20px;
+        }
+    }
+    
+    .fa-chevron-right {
+        position: absolute;
+        font-size: 5em;
+        top: 100px;
+        right: 40px;
+        cursor: pointer;
+        @include breakpoint(small-only) {
+            font-size: 3em;
+            right: 20px;
+        }
+    }
+
+    .fa-chevron-left:hover,
+    .fa-chevron-right:hover {
+        color: #aaa;
+    } 
 
     .top-bar {
         @include flex-space-around();
         width: inherit;
         background: lightcoral;
+        @include breakpoint(small-only) {}
 
         .container-comments {
             @include flex-direction-row();
+            @include breakpoint(small-only) {}
 
-            .show-comments-field {}
+            .show-comments-field {
+                @include breakpoint(small-only) {}
+            }
+
             .add-comments-field {
                 i {
                     font-size: 1.4em;
                     margin: 0 10px;
+                    @include breakpoint(small-only) {}
                 }
             }
         }
     }
 
-    .container-informations {
+    .carousel-informations {
+        @include flex-direction-row();
+        // width: 100%;
+        // height: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow: hidden;
         width: inherit;
         height: 80vh;
         background: cadetblue;
+        @include breakpoint(small-only) {
+        
+        }
+    }
+ 
+
+    .qualification,
+    .experience,
+    .qualities {
+        @include flex-direction-row();
+        @include flex-center();
+        flex: none;
+        scroll-snap-align: start;
+        width: inherit;
+        height: 100%;
+        //background:yellowgreen;
+        @include breakpoint(small-only) {
+            @include flex-direction-column();
+            padding: 20px;
+        }
+        
+        img {
+            width: 400px;
+            @include breakpoint(small-only) {
+                width: 250px;
+                margin-bottom: 40px;
+            }
+        }
+
+        h3 {
+            font-size: 1.2em;
+            @include breakpoint(small-only) {
+                font-size: 1.3em;
+                margin-bottom: 10px;
+            }
+        }
+
+        p {
+            font-size: 1em;
+            @include breakpoint(small-only) {
+                font-size: 1.2em;
+            }
+        }
     }
 }

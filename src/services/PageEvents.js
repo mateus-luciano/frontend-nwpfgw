@@ -4,6 +4,8 @@ class PageEvents {
         this.assignEventButtonsNavBarHeader()
         this.assignEventButtonsAboutSection(0, 2000)
         this.assignEventButtonsAboutSection(1, -2000)
+        this.assignEventArrowsInformationSection('fa-chevron-left ', -2000)
+        this.assignEventArrowsInformationSection('fa-chevron-right', 2000)
     }
 
     assignEventHeaderScrolling() {
@@ -36,6 +38,13 @@ class PageEvents {
         document.getElementsByClassName('btn-more-about')[idx].addEventListener('click', event => {
             event.preventDefault()
             document.getElementsByClassName('carousel-about')[0].scrollBy(width, 0)
+        })
+    }
+
+    assignEventArrowsInformationSection(side, width) {
+        document.getElementsByClassName(side)[0].addEventListener('click', () => {
+            console.log('a')
+            document.getElementsByClassName('carousel-informations')[0].scrollBy(width, 0)
         })
     }
 }
