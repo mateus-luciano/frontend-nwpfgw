@@ -48,13 +48,44 @@
                 background: lightblue;
                 i {
                     font-size: 3em;
+                    cursor: pointer;
                 }
+
+                .fa-html5:hover { color: #f00; }
+                .fa-css3-alt:hover { color: rgb(0, 119, 199); }
+                .fa-js-square:hover { color: #ff0; }
+                .fa-node-js:hover { color: rgb(0, 138, 0); }
+                .fa-sass:hover { color: rgb(160, 0, 125); }
+                .fa-bootstrap:hover { color: rgb(43, 1, 160); }
+                .fa-database:hover { color: palegreen; }
+                .fa-react:hover { color: rgb(1, 153, 241); }
             }
     
             .skills-content {
                 width: 90%;
                 height: 100%;
                 background: crimson;
+
+                .skills {
+                    @include flex-center();
+                    @include flex-direction-column();
+                    width: 100%;
+                    height: 100%;
+                    background: ivory;
+                    border-radius: 20px;
+                    box-shadow: $box-shadow-default;
+                    padding: 20px;
+                    
+                    h4 {
+                        align-self: flex-start;
+                        font-size: 1.4em;
+                        margin-bottom: 40px;
+                    }
+
+                    p {
+                        font-size: 1.2em;
+                    }
+                }
             }
         }
     }

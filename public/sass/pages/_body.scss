@@ -29,6 +29,7 @@ body {
 
 .fixed-position {
     position: fixed;
+    z-index: 1;
     border-top: 2px solid rgba(9,9,121,1);
     top: 0;
     @include breakpoint(small-only) {

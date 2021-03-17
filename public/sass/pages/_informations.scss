@@ -4,6 +4,7 @@
     font-size: $font-size;
     padding-top: 60px;
     position: relative;
+    //z-index: -1;
     @include breakpoint(small-only) {
         font-size: $font-size-mobile;
     }
