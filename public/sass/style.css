@@ -80,12 +80,24 @@ body {
   right: 0;
 }
 
+.neutral {
+  background: none;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
 .error {
   background: #f00;
+  color: #000;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .success {
   background: green;
+  color: #000;
+  -webkit-transition: .9s;
+  transition: .9s;
 }
 
 .hidden {
@@ -225,6 +237,12 @@ header .nav-bar p {
   margin-top: 100px;
 }
 
+@media (max-width: 37.4375em) {
+  #about {
+    font-size: 14px;
+  }
+}
+
 #about .container-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,10 +260,39 @@ header .nav-bar p {
           box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 37.4375em) {
+  #about .container-about {
+    width: 98%;
+    height: 98%;
+  }
+}
+
+@media (max-width: 74.9375em) {
+  #about .container-about {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 75em) {
+  #about .container-about {
+    width: 98%;
+    height: 70%;
+  }
+}
+
 #about .container-about .about-content {
   width: 90%;
-  height: 90%;
+  height: 80%;
   padding: 40px;
+}
+
+@media (max-width: 37.4375em) {
+  #about .container-about .about-content {
+    width: 99%;
+    height: 99%;
+    padding: 10px;
+  }
 }
 
 #about .container-about .about-content h2 {
@@ -253,7 +300,25 @@ header .nav-bar p {
   font-weight: 600;
 }
 
+@media (max-width: 37.4375em) {
+  #about .container-about .about-content h2 {
+    font-size: 1em;
+  }
+}
+
 #about .container-about .about-content p {
   font-size: .9em;
+}
+
+@media (max-width: 37.4375em) {
+  #about .container-about .about-content p {
+    font-size: .8em;
+  }
+}
+
+@media (min-width: 19.9375em) {
+  #about .container-about .about-content p {
+    font-size: .85em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

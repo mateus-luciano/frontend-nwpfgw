@@ -35,12 +35,21 @@ body {
     }
 }
 
+.neutral {
+    background: none;
+    transition: .9s;
+}
+
 .error {
     background: #f00;
+    color: #000;
+    transition: .5s;
 }
 
 .success {
     background: green;
+    color: #000;
+    transition: .9s;
 }
 
 .hidden {

@@ -4,6 +4,9 @@
     height: 100vh;
     font-size: $global-font-size;
     margin-top: 100px;
+    @include breakpoint(small-only) {
+        font-size: $global-font-size-mobile;
+    }
 
     .container-about {
         @include flex-center();
@@ -11,19 +14,45 @@
         height: 90%;
         border-radius: 20px;
         box-shadow: $box-shadow-default;
+        @include breakpoint(small-only) {
+            width: 98%;
+            height: 98%;
+        }
+        @include breakpoint(large-only) {
+            width: 90%;
+            height: 90%;
+        }
+        @include breakpoint(large-up) {
+            width: 98%;
+            height: 70%;
+        }
 
         .about-content {
             width: 90%;
-            height: 90%;
+            height: 80%;
             padding: 40px;
+            @include breakpoint(small-only) {
+                width: 99%;
+                height: 99%;
+                padding: 10px;
+            }
 
             h2 {
                 font-size: 1.4em;
                 font-weight: 600;
+                @include breakpoint(small-only) {
+                    font-size: 1em;
+                }
             }
 
             p {
                 font-size: .9em;
+                @include breakpoint(small-only) {
+                    font-size: .8em;
+                }
+                @include breakpoint(319) {
+                    font-size: .85em;
+                }
             }
         }
     }
