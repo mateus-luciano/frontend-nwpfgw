@@ -1,31 +1,137 @@
 #contact {
+    @include flex-center();
+    @include flex-direction-column();
     width: 100vw;
     height: 100vh;
-    background: red;
+    font-size: $font-size;
+    background:blueviolet;
 
-    .carousel {
+   .container-contact {
+       @include flex-space-around();
+       width: 80%;
+       background: cadetblue;
+       .social-medias {
+           h2 {}
+
+           .icons {
+               @include flex-direction-row();
+               i {
+                    @include flex-center();
+                    font-size: 1.4em;
+                    width: 40px;
+                    height: 40px;
+                    background: #000;
+                    border-radius: 50%;
+                    margin: 3px;
+                    color: #fff;
+                    cursor: pointer;
+               }
+           }
+
+           p {}
+       }
+
+       .form-contact {
+           width: 50%;
+           height: 400px;
+           background: brown;
+
+           form {
+               
+           }
+       }
+   }
+
+   .informations-contact {
+       @include flex-center();
+       width: 80%;
+       height: 300px;
+       background: chartreuse;
+
+       .center {  
         @include flex-direction-row();
-        width: 100%;
-        height: 100%;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        overflow: hidden;
+        @include flex-wrap();
+        @include flex-center();
+        position: relative;
+ 
+        margin: 40px 0;
+        @include breakpoint(small-only) {}
 
-        .div1 {
-            flex: none;
-            scroll-snap-align: start;
-            width: 100%;
-            height: 100%;
-            background: rosybrown;
-        }
+        .box {
+            position: relative;
+            width: 240px;
+            height: 240px;
+            margin: 20px 40px;
+            background: #fff;
+            box-shadow: 0px 30px 50px rgba(0,0,0,0.5);
+            overflow: hidden;
+            @include breakpoint(small-only) {}
         
-        .div2 {
-            flex: none;
-            scroll-snap-align: start;
-            width: 100%;
-            height: 100%;
-            background: royalblue;
+
+            .imgBx {
+                @include flex-center();
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transition: 0.5s;
+                transform: scale(1) translateY(0);
+
+                img {
+                    max-width: 100px;
+                }
+            }
+
+            .content {
+                @include flex-center();
+                @include flex-direction-column();
+                position: relative;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                padding: 20px;
+                background: #000;
+                transform: scale(0) translateY(calc(100% - 5px));
+                transition: 0.5s;
+                //transition-delay: 0.2s;
+
+                .icon {
+                    img {
+                        width: 80px;
+                        filter: invert(1);
+                    }
+                }
+
+                h2 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 1em;
+                    letter-spacing: 2px;
+                    margin-top: 20px;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 1em;
+                    font-weight: 500;
+                }
+            }
         }
+
+        .box:hover {
+
+            .imgBx {
+                transform: scale(1) translateY(-100%);
+            }
+
+            .content {
+                transform: scale(1);
+                transition-delay: 0s;
+            }
+        }
+
     }
+   }
 }
