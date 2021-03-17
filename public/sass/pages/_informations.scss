@@ -1,0 +1,31 @@
+#informations {
+    width: 100vw;
+    height: 100vh;
+    font-size: $font-size;
+    background: red;
+    padding-top: 60px;
+
+    .top-bar {
+        @include flex-space-around();
+        width: inherit;
+        background: lightcoral;
+
+        .container-comments {
+            @include flex-direction-row();
+
+            .show-comments-field {}
+            .add-comments-field {
+                i {
+                    font-size: 1.4em;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    .container-informations {
+        width: inherit;
+        height: 80vh;
+        background: cadetblue;
+    }
+}

@@ -29,8 +29,7 @@ body {
 
 .fixed-position {
     position: fixed;
-    background: $header-primary-color;
-    border-top: 3px solid $header-secundary-color;
+    border-top: 2px solid rgba(9,9,121,1);
     top: 0;
     @include breakpoint(small-only) {
         

@@ -2,6 +2,8 @@ class PageEvents {
     init() {
         this.assignEventHeaderScrolling()
         this.assignEventButtonsNavBarHeader()
+        this.assignEventButtonsAboutSection(0, 2000)
+        this.assignEventButtonsAboutSection(1, -2000)
     }
 
     assignEventHeaderScrolling() {
@@ -27,6 +29,13 @@ class PageEvents {
                     behavior: 'smooth'
                 })
             })
+        })
+    }
+
+    assignEventButtonsAboutSection(idx, width) {
+        document.getElementsByClassName('btn-more-about')[idx].addEventListener('click', event => {
+            event.preventDefault()
+            document.getElementsByClassName('carousel-about')[0].scrollBy(width, 0)
         })
     }
 }
