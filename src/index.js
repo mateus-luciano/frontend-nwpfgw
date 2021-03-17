@@ -1,5 +1,3 @@
-import ClassName from './services/ClassName'
+import PageEvents from './services/PageEvents'
 
-ClassName.init()
-
-console.log('ok')
+PageEvents.init()
