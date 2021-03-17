@@ -13,6 +13,7 @@
         width: 90%;
         height: 90%;
         border-radius: 20px;
+        background: $background-color;
         box-shadow: $box-shadow-default;
         @include breakpoint(small-only) {
             width: 98%;
