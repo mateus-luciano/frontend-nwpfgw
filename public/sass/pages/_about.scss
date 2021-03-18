@@ -8,8 +8,8 @@
 
     .carousel-about {
         @include flex-direction-row();
-        width: 100%;
-        height: 100%;
+        width: inherit;
+        height: inherit;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
@@ -18,27 +18,26 @@
         .about-container,
         .see-more-container {
             @include flex-center();
+            width: inherit;
+            height: inherit;
             flex: none;
             scroll-snap-align: start;
-            width: 100%;
-            height: 100%;
 
             .about-content,
             .see-more-content {
                 @include flex-space-around();
+                flex: none;
+                scroll-snap-align: start;
                 width: 85%;
                 height: 80%;
                 border-radius: 20px;
                 padding: 60px;
                 background: $background-color;
                 box-shadow: $box-shadow-default;
-                flex: none;
-                scroll-snap-align: start;
                 @include breakpoint(small-only) {
                     @include flex-direction-column();
                     width: 90%;
                     height: 80%;
-                    border-radius: 20px;
                     padding: 10px;
                 }
 

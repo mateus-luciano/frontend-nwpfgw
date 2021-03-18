@@ -26,6 +26,10 @@
                 position: relative;
                 @include breakpoint(small-only) {}
 
+                .show-comments {
+                    cursor: pointer;
+                }
+
                 .populate-comments {
                     @include flex-direction-column();
                     width: 650px;
@@ -126,6 +130,7 @@
                 i {
                     font-size: 1.4em;
                     margin: 0 10px;
+                    cursor: pointer;
                     @include breakpoint(small-only) {}
                 }
 

@@ -10,6 +10,8 @@ class PageEvents {
         this.assignEventExtLink('fa-linkedin-in', 'https://www.linkedin.com/in/mateus-luciano-850ba61a4')
         this.assignEventExtLink('fa-instagram', 'https://www.instagram.com/teeusdm')
         this.assignEventExtLink('fa-github', 'https://github.com/teeusdm')
+        this.assignEventSeeComments()
+        this.assignEventAddNewComment()
     }
 
     assignEventHeaderScrolling() {
@@ -54,22 +56,46 @@ class PageEvents {
     assignEventSkillsSection() {
         document.querySelectorAll('.icon-skills').forEach((current, idx) => {
             current.addEventListener('click', () => {
-                this.hideSkills()
+                this.hideAllSkills()
                 document.getElementsByClassName('skills')[idx].classList.remove('hidden')
             })
         })
     }
 
-    hideSkills() {
+    hideAllSkills() {
         for (let skills of document.querySelectorAll('.skills')) {
             skills.classList.add('hidden')
         }
     }
 
-    assignEventExtLink(html, link) {
-        document.getElementsByClassName(html)[0].addEventListener('click', () => {
+    assignEventExtLink(icon, link) {
+        document.getElementsByClassName(icon)[0].addEventListener('click', () => {
             window.open(link, '_blank')
         })
+    }
+
+    assignEventSeeComments() {
+        document.querySelectorAll('.show-comments').forEach((current, idx) => {
+            current.addEventListener('click', () => {
+                this.hideBlocksComments('.container-form')
+                document.getElementsByClassName('populate-comments')[idx].classList.toggle('hidden')
+            })
+        })
+    }
+
+    assignEventAddNewComment() {
+        document.querySelectorAll('.fa-comment-medical').forEach((current, idx) => {
+            current.addEventListener('click', () => {
+                this.hideBlocksComments('.populate-comments')
+                document.getElementsByClassName('container-form')[idx].classList.toggle('hidden')
+            })
+        })
+    }
+
+    hideBlocksComments(html) {
+        for (let block of document.querySelectorAll(html)) {
+            block.classList.add('hidden')
+        }
     }
 }
 
