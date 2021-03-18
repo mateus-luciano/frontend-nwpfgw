@@ -3,23 +3,36 @@ footer {
     width: 100vw;
     height: 200px;
     background: $background-color;
+    @include breakpoint(small-only) {
+        margin-top: 400px;
+    }
 
     .container {
         @include flex-center();
         @include flex-direction-column();
+        @include breakpoint(small-only) {}
 
         h4 {
             font-size: 3em;
+            @include breakpoint(small-only) {
+                font-size: 2em;
+            }
         }
 
         p {
             font-size: 1.6em;
+            @include breakpoint(small-only) {
+                font-size: 1.2em;
+            }
         }
 
         span {
             font-size: 1em;
             color: #aaa;
             margin-right: 5px;
+            @include breakpoint(small-only) {
+                font-size: .9em;
+            }
         }
     }
 }

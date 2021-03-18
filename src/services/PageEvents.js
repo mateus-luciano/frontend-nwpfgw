@@ -6,13 +6,10 @@ class PageEvents {
         this.assignEventButtonsAboutSection(1, -2000)
         this.assignEventArrowsInformationSection('fa-chevron-left ', -2000)
         this.assignEventArrowsInformationSection('fa-chevron-right', 2000)
-        this.assignEventSkillsSection(0)
-        this.assignEventSkillsSection(1)
-        this.assignEventSkillsSection(2)
-        this.assignEventSkillsSection(3)
-        this.assignEventSkillsSection(4)
-        this.assignEventSkillsSection(5)
-        this.assignEventSkillsSection(6)
+        this.assignEventSkillsSection()
+        this.assignEventExtLink('fa-linkedin-in', 'https://www.linkedin.com/in/mateus-luciano-850ba61a4')
+        this.assignEventExtLink('fa-instagram', 'https://www.instagram.com/teeusdm')
+        this.assignEventExtLink('fa-github', 'https://github.com/teeusdm')
     }
 
     assignEventHeaderScrolling() {
@@ -54,10 +51,12 @@ class PageEvents {
         })
     }
 
-    assignEventSkillsSection(idx) {
-        document.getElementsByClassName('icon-skills')[idx].addEventListener('click', () => {
-            this.hideSkills()
-            document.getElementsByClassName('skills')[idx].classList.remove('hidden')
+    assignEventSkillsSection() {
+        document.querySelectorAll('.icon-skills').forEach((current, idx) => {
+            current.addEventListener('click', () => {
+                this.hideSkills()
+                document.getElementsByClassName('skills')[idx].classList.remove('hidden')
+            })
         })
     }
 
@@ -65,6 +64,12 @@ class PageEvents {
         for (let skills of document.querySelectorAll('.skills')) {
             skills.classList.add('hidden')
         }
+    }
+
+    assignEventExtLink(html, link) {
+        document.getElementsByClassName(html)[0].addEventListener('click', () => {
+            window.open(link, '_blank')
+        })
     }
 }
 
