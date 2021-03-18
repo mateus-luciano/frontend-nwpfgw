@@ -43,7 +43,7 @@ body {
     height: 50px;
     border-radius: 10px;
     background: none;
-    transition: .9s;
+    transition: .6s;
 }
 
 .error {
@@ -53,7 +53,7 @@ body {
     border-radius: 10px;
     background: #f00;
     color: #000;
-    transition: .5s;
+    transition: .6s;
 }
 
 .success {
@@ -63,7 +63,7 @@ body {
     border-radius: 10px;
     background: green;
     color: #000;
-    transition: .9s;
+    transition: .6s;
 }
 
 .form-neutral {
@@ -71,20 +71,33 @@ body {
     height: 0px;
     background: none;
     border-radius: 10px;
+    transition: .6s;
 }
 
 .form-error {
+    @include flex-center();
     width: 90%;
     height: 40px;
+    padding: 8px;
     background: #f00;
     border-radius: 10px;
+    font-size: .9em;
+    transition: .6s;
 }
 
 .form-success {
+    @include flex-center();
     width: 90%;
     height: 40px;
     background: green;
     border-radius: 10px;
+    padding: 8px;
+    font-size: .9em;
+    transition: .6s;
+}
+
+.btn-page {
+    color: #000;
 }
 
 .hidden {

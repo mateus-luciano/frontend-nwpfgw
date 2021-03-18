@@ -60,9 +60,9 @@
                             margin-bottom: 10px;
                         }
 
-                        p:hover {
+                        .page-link-s:hover {
                             cursor: pointer;
-                            color: #fff;
+                            color: #aaa;
                         }
                     }
                     
@@ -71,7 +71,7 @@
                         width: inherit;
                         height: inherit;
 
-                        .content {
+                        .content-skills {
                             @include flex-direction-column();
                             width: 90%;
                             height: 92%;

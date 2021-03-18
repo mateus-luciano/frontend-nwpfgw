@@ -89,9 +89,9 @@
                             @include breakpoint(small-only) {}
                         }
 
-                        p:hover {
+                        .page-link:hover {
                             cursor: pointer;
-                            color: #fff;
+                            color: #aaa;
                         }
                     }
                     
@@ -101,7 +101,7 @@
                         height: inherit;
                         @include breakpoint(small-only) {}
 
-                        .content {
+                        .content-info {
                             @include flex-direction-column();
                             width: 95%;
                             height: 92%;

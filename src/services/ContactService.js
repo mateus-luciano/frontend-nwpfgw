@@ -27,56 +27,30 @@ class ContactService extends BaseServer {
         response.innerHTML = ''
         response.classList.add('neutral')
         
-
         if (!this.name.value) {
             response.innerHTML = ''
             response.classList.add('error')
             response.innerHTML = `<p>Preencha o campo nome</p>`
-            setTimeout(() => { 
-                response.innerHTML = ''
-                response.classList.remove('success')
-                response.classList.remove('error')
-                response.classList.add('neutral')
-            }, 6000)
         } else if (!this.email.value) {
             response.innerHTML = ''
             response.classList.add('error')
             response.innerHTML = `<p>Preencha o campo email</p>`
-            setTimeout(() => { 
-                response.innerHTML = ''
-                response.classList.remove('success')
-                response.classList.remove('error')
-                response.classList.add('neutral')
-            }, 6000)
         } else if (!this.phone.value) {
             response.innerHTML = ''
             response.classList.add('error')
             response.innerHTML = `<p>Preencha o campo telefone</p>`
-            setTimeout(() => { 
-                response.innerHTML = ''
-                response.classList.remove('success')
-                response.classList.remove('error')
-                response.classList.add('neutral')
-            }, 6000)
         } else if (!this.message.value) {
             response.innerHTML = ''
             response.classList.add('error')
             response.innerHTML = `<p>Preencha o campo mensagem</p>`
-            setTimeout(() => { 
-                response.innerHTML = ''
-                response.classList.remove('success')
-                response.classList.remove('error')
-                response.classList.add('neutral')
-            }, 6000)
         } else {
-            response.innerHTML = `<p>Mensagem enviada com sucesso. :)</p>`
+            response.innerHTML = `<p>Mensagem enviada com sucesso :)</p>`
             response.classList.add('success')
             setTimeout(() => {
                 this.name.value = ''
                 this.email.value = ''
                 this.phone.value = ''
                 this.message.value = ''
-                
                 response.innerHTML = ''
                 response.classList.remove('success')
                 response.classList.remove('error')
