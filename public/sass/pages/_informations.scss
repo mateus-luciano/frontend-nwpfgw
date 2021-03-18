@@ -62,16 +62,24 @@
                     left: -450px;
                     background: #f00;
                     border-radius: 20px;
+                    @include breakpoint(small-only) {
+                        width: 320px;
+                        height: 520px;
+                        top: 40px;
+                        left: -160px;
+                    }
 
                     .pagination {
                         @include flex-direction-row();
                         @include flex-center();
+                        @include breakpoint(small-only) {}
 
                         p {
                             font-size: 1.4em;
                             font-weight: 600;
                             margin: 0 4px;
                             margin-bottom: 10px;
+                            @include breakpoint(small-only) {}
                         }
 
                         p:hover {
@@ -84,12 +92,14 @@
                         @include flex-center();
                         width: inherit;
                         height: inherit;
+                        @include breakpoint(small-only) {}
 
                         .content {
                             @include flex-direction-column();
                             width: 90%;
                             height: 92%;
                             background: ivory;
+                            @include breakpoint(small-only) {}
 
                             .comment {
                                 @include flex-direction-column();
@@ -98,25 +108,36 @@
                                 background: lawngreen;
                                 border-radius: 20px;
                                 margin: 6px 0;
-                                //padding: 10px;
+                                @include breakpoint(small-only) {
+                                    height: 140px;
+                                    margin: 4px 0;
+                                }
 
                                 .main {
                                     height: 124px;
                                     padding: 10px;
+                                    @include breakpoint(small-only) {}
 
                                     p {
                                         font-size: 1.08em;
+                                        @include breakpoint(small-only) {
+                    
+                                        }
                                     }
                                 }
 
                                 .bottom {
                                     @include flex-justify-end();
                                     padding-right: 30px;
+                                    @include breakpoint(small-only) {}
                                     
                                     p {
                                         font-size: 1em;
                                         font-weight: 500;
                                         color: bisque;
+                                        @include breakpoint(small-only) {
+                                            
+                                        }
                                     }
                                 }
                             }
@@ -133,7 +154,10 @@
                     top: -10px;
                     right: 100px;
                     transform: rotate(45deg);
-                    background: indigo;
+                    background: #f00;
+                    @include breakpoint(small-only) {
+                        right: 80px;
+                    }
                 }
             }
 
@@ -151,6 +175,13 @@
                     position: absolute;
                     top: 50px;
                     left: -250px;
+                    @include breakpoint(small-only) {
+                        width: 280px;
+                        height: 280px;
+                        top: 40px;
+                        right: 100px;
+                        //z-index: 3;
+                    }
                     
                     form {
                         @include flex-center();
@@ -159,6 +190,7 @@
                         height: inherit;
                         border-radius: 20px;
                         background: indigo;
+                        @include breakpoint(small-only) {}
                         
                         input,
                         textarea {
@@ -170,14 +202,19 @@
                             border: none;
                             border-radius: 10px;
                             outline: none;
+                            @include breakpoint(small-only) {
+                                margin: 5px 0;
+                            }
                         }
                         
                         textarea {
                             height: 100px;
+                            @include breakpoint(small-only) {}
                         }
                         
                         label {
                             font-size: 1.1em;
+                                   @include breakpoint(small-only) {}
                         }
 
                         button {
@@ -190,6 +227,9 @@
                             outline: none;
                             font-size: 1.1em;
                             font-weight: 600;
+                            @include breakpoint(small-only) {
+                                margin: 20px 0;
+                            }
                         }
 
                         button:hover {
@@ -209,6 +249,10 @@
                     right: 115px;
                     transform: rotate(45deg);
                     background: indigo;
+                    @include breakpoint(small-only) {
+                        top: -10px;
+                        right: 30px;
+                    }
                 }
             }
         }

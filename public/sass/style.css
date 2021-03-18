@@ -700,6 +700,15 @@ header .nav-bar p {
   border-radius: 20px;
 }
 
+@media (max-width: 37.4375em) {
+  #informations .top-bar .container-comments .show-comments-field .populate-comments {
+    width: 320px;
+    height: 520px;
+    top: 40px;
+    left: -160px;
+  }
+}
+
 #informations .top-bar .container-comments .show-comments-field .populate-comments .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,6 +780,13 @@ header .nav-bar p {
   margin: 6px 0;
 }
 
+@media (max-width: 37.4375em) {
+  #informations .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment {
+    height: 140px;
+    margin: 4px 0;
+  }
+}
+
 #informations .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment .main {
   height: 124px;
   padding: 10px;
@@ -805,7 +821,13 @@ header .nav-bar p {
   right: 100px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: indigo;
+  background: #f00;
+}
+
+@media (max-width: 37.4375em) {
+  #informations .top-bar .container-comments .show-comments-field .populate-comments::before {
+    right: 80px;
+  }
 }
 
 #informations .top-bar .container-comments .add-comments-field {
@@ -823,6 +845,15 @@ header .nav-bar p {
   position: absolute;
   top: 50px;
   left: -250px;
+}
+
+@media (max-width: 37.4375em) {
+  #informations .top-bar .container-comments .add-comments-field .container-form {
+    width: 280px;
+    height: 280px;
+    top: 40px;
+    right: 100px;
+  }
 }
 
 #informations .top-bar .container-comments .add-comments-field .container-form form {
@@ -858,6 +889,13 @@ header .nav-bar p {
   outline: none;
 }
 
+@media (max-width: 37.4375em) {
+  #informations .top-bar .container-comments .add-comments-field .container-form form input,
+  #informations .top-bar .container-comments .add-comments-field .container-form form textarea {
+    margin: 5px 0;
+  }
+}
+
 #informations .top-bar .container-comments .add-comments-field .container-form form textarea {
   height: 100px;
 }
@@ -878,6 +916,12 @@ header .nav-bar p {
   font-weight: 600;
 }
 
+@media (max-width: 37.4375em) {
+  #informations .top-bar .container-comments .add-comments-field .container-form form button {
+    margin: 20px 0;
+  }
+}
+
 #informations .top-bar .container-comments .add-comments-field .container-form form button:hover {
   cursor: pointer;
   background: #0e3c3d;
@@ -894,6 +938,13 @@ header .nav-bar p {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background: indigo;
+}
+
+@media (max-width: 37.4375em) {
+  #informations .top-bar .container-comments .add-comments-field .container-form::before {
+    top: -10px;
+    right: 30px;
+  }
 }
 
 #informations .carousel-informations {
@@ -1061,6 +1112,15 @@ header .nav-bar p {
   border-radius: 20px;
 }
 
+@media (max-width: 37.4375em) {
+  #skills .top-bar .container-comments .show-comments-field .populate-comments {
+    width: 320px;
+    height: 520px;
+    top: 40px;
+    left: -160px;
+  }
+}
+
 #skills .top-bar .container-comments .show-comments-field .populate-comments .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1132,6 +1192,13 @@ header .nav-bar p {
   margin: 6px 0;
 }
 
+@media (max-width: 37.4375em) {
+  #skills .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment {
+    height: 140px;
+    margin: 4px 0;
+  }
+}
+
 #skills .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment .main {
   height: 124px;
   padding: 10px;
@@ -1166,7 +1233,13 @@ header .nav-bar p {
   right: 100px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: indigo;
+  background: #f00;
+}
+
+@media (max-width: 37.4375em) {
+  #skills .top-bar .container-comments .show-comments-field .populate-comments::before {
+    right: 80px;
+  }
 }
 
 #skills .top-bar .container-comments .add-comments-field {
@@ -1184,6 +1257,14 @@ header .nav-bar p {
   position: absolute;
   top: 50px;
   left: -250px;
+}
+
+@media (max-width: 37.4375em) {
+  #skills .top-bar .container-comments .add-comments-field .container-form {
+    width: 280px;
+    height: 280px;
+    top: 40px;
+  }
 }
 
 #skills .top-bar .container-comments .add-comments-field .container-form form {
@@ -1219,6 +1300,13 @@ header .nav-bar p {
   outline: none;
 }
 
+@media (max-width: 37.4375em) {
+  #skills .top-bar .container-comments .add-comments-field .container-form form input,
+  #skills .top-bar .container-comments .add-comments-field .container-form form textarea {
+    margin: 5px 0;
+  }
+}
+
 #skills .top-bar .container-comments .add-comments-field .container-form form textarea {
   height: 100px;
 }
@@ -1239,6 +1327,12 @@ header .nav-bar p {
   font-weight: 600;
 }
 
+@media (max-width: 37.4375em) {
+  #skills .top-bar .container-comments .add-comments-field .container-form form button {
+    margin: 20px 0;
+  }
+}
+
 #skills .top-bar .container-comments .add-comments-field .container-form form button:hover {
   cursor: pointer;
   background: #0e3c3d;
@@ -1255,6 +1349,13 @@ header .nav-bar p {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background: indigo;
+}
+
+@media (max-width: 37.4375em) {
+  #skills .top-bar .container-comments .add-comments-field .container-form::before {
+    top: -10px;
+    right: 30px;
+  }
 }
 
 #skills .container-skills {
