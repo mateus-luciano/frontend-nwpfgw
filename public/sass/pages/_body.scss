@@ -11,7 +11,7 @@ body {
     width: 100%;
     height: 100%;
     //background: #aaa;
-    background: url(../../images/code-coder-coding-computer.jpg) no-repeat;
+    background: url(../../images/background.jfif) no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     font-family: 'Poppins', sans-serif;
@@ -64,6 +64,27 @@ body {
     background: green;
     color: #000;
     transition: .9s;
+}
+
+.form-neutral {
+    width: 90%;
+    height: 0px;
+    background: none;
+    border-radius: 10px;
+}
+
+.form-error {
+    width: 90%;
+    height: 40px;
+    background: #f00;
+    border-radius: 10px;
+}
+
+.form-success {
+    width: 90%;
+    height: 40px;
+    background: green;
+    border-radius: 10px;
 }
 
 .hidden {

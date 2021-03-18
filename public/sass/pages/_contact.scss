@@ -19,6 +19,10 @@
        }
 
        .social-medias {
+           margin-left: 40px;
+           @include breakpoint(small-only) {
+                margin-left: 0;
+           }
            h2 {
                font-size: 2em;
                margin-bottom: 20px;

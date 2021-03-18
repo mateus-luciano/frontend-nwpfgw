@@ -153,7 +153,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: url(../../images/code-coder-coding-computer.jpg) no-repeat;
+  background: url(../../images/background.jfif) no-repeat;
   background-attachment: fixed;
   background-size: 100%;
   font-family: 'Poppins', sans-serif;
@@ -234,6 +234,27 @@ body {
   color: #000;
   -webkit-transition: .9s;
   transition: .9s;
+}
+
+.form-neutral {
+  width: 90%;
+  height: 0px;
+  background: none;
+  border-radius: 10px;
+}
+
+.form-error {
+  width: 90%;
+  height: 40px;
+  background: #f00;
+  border-radius: 10px;
+}
+
+.form-success {
+  width: 90%;
+  height: 40px;
+  background: green;
+  border-radius: 10px;
 }
 
 .hidden {
@@ -704,7 +725,7 @@ header .nav-bar p {
   position: absolute;
   top: 50px;
   left: -450px;
-  background: #f00;
+  background: #00665e;
   border-radius: 20px;
 }
 
@@ -768,9 +789,8 @@ header .nav-bar p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 95%;
   height: 92%;
-  background: ivory;
 }
 
 #informations .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment {
@@ -783,8 +803,8 @@ header .nav-bar p {
           flex-direction: column;
   width: 100%;
   height: 160px;
-  background: lawngreen;
   border-radius: 20px;
+  background: #6a7c79;
   margin: 6px 0;
 }
 
@@ -802,6 +822,7 @@ header .nav-bar p {
 
 #informations .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment .main p {
   font-size: 1.08em;
+  color: #000;
 }
 
 #informations .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment .bottom {
@@ -817,7 +838,7 @@ header .nav-bar p {
 #informations .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment .bottom p {
   font-size: 1em;
   font-weight: 500;
-  color: bisque;
+  color: #0e3c3d;
 }
 
 #informations .top-bar .container-comments .show-comments-field .populate-comments::before {
@@ -829,7 +850,7 @@ header .nav-bar p {
   right: 100px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: #f00;
+  background: #00665e;
 }
 
 @media (max-width: 37.4375em) {
@@ -850,7 +871,7 @@ header .nav-bar p {
 
 #informations .top-bar .container-comments .add-comments-field .container-form {
   width: 400px;
-  height: 380px;
+  height: 390px;
   position: absolute;
   top: 50px;
   left: -250px;
@@ -883,7 +904,7 @@ header .nav-bar p {
   width: inherit;
   height: inherit;
   border-radius: 20px;
-  background: indigo;
+  background: #00665e;
 }
 
 #informations .top-bar .container-comments .add-comments-field .container-form form input,
@@ -910,14 +931,15 @@ header .nav-bar p {
 }
 
 #informations .top-bar .container-comments .add-comments-field .container-form form label {
-  font-size: 1.1em;
+  font-size: 1em;
+  color: #000;
 }
 
 #informations .top-bar .container-comments .add-comments-field .container-form form button {
   width: 80%;
   height: 40px;
   background: cadetblue;
-  margin: 40px 0;
+  margin: 20px 0;
   border: none;
   border-radius: 10px;
   outline: none;
@@ -946,7 +968,7 @@ header .nav-bar p {
   right: 115px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: indigo;
+  background: #00665e;
 }
 
 @media (max-width: 37.4375em) {
@@ -1124,7 +1146,7 @@ header .nav-bar p {
   position: absolute;
   top: 50px;
   left: -450px;
-  background: #f00;
+  background: #00665e;
   border-radius: 20px;
 }
 
@@ -1190,7 +1212,6 @@ header .nav-bar p {
           flex-direction: column;
   width: 90%;
   height: 92%;
-  background: ivory;
 }
 
 #skills .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment {
@@ -1203,9 +1224,9 @@ header .nav-bar p {
           flex-direction: column;
   width: 100%;
   height: 160px;
-  background: lawngreen;
   border-radius: 20px;
   margin: 6px 0;
+  background: #6a7c79;
 }
 
 @media (max-width: 37.4375em) {
@@ -1222,6 +1243,7 @@ header .nav-bar p {
 
 #skills .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment .main p {
   font-size: 1.08em;
+  color: #000;
 }
 
 #skills .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment .bottom {
@@ -1237,7 +1259,7 @@ header .nav-bar p {
 #skills .top-bar .container-comments .show-comments-field .populate-comments .container-populate-comments .content .comment .bottom p {
   font-size: 1em;
   font-weight: 500;
-  color: bisque;
+  color: #0e3c3d;
 }
 
 #skills .top-bar .container-comments .show-comments-field .populate-comments::before {
@@ -1249,7 +1271,7 @@ header .nav-bar p {
   right: 100px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: #f00;
+  background: #00665e;
 }
 
 @media (max-width: 37.4375em) {
@@ -1270,7 +1292,7 @@ header .nav-bar p {
 
 #skills .top-bar .container-comments .add-comments-field .container-form {
   width: 400px;
-  height: 380px;
+  height: 390px;
   position: absolute;
   top: 50px;
   left: -250px;
@@ -1302,7 +1324,7 @@ header .nav-bar p {
   width: inherit;
   height: inherit;
   border-radius: 20px;
-  background: indigo;
+  background: #00665e;
 }
 
 #skills .top-bar .container-comments .add-comments-field .container-form form input,
@@ -1329,14 +1351,15 @@ header .nav-bar p {
 }
 
 #skills .top-bar .container-comments .add-comments-field .container-form form label {
-  font-size: 1.1em;
+  font-size: 1em;
+  color: #000;
 }
 
 #skills .top-bar .container-comments .add-comments-field .container-form form button {
   width: 80%;
   height: 40px;
   background: cadetblue;
-  margin: 40px 0;
+  margin: 20px 0;
   border: none;
   border-radius: 10px;
   outline: none;
@@ -1365,7 +1388,7 @@ header .nav-bar p {
   right: 115px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: indigo;
+  background: #00665e;
 }
 
 @media (max-width: 37.4375em) {
@@ -1387,6 +1410,7 @@ header .nav-bar p {
           align-items: center;
   width: inherit;
   height: 90%;
+  background: #f0f0f7;
 }
 
 #skills .container-skills .main {
@@ -1640,6 +1664,16 @@ header .nav-bar p {
     width: 90%;
     height: 100%;
     margin-top: 280px;
+  }
+}
+
+#contact .container-contact .social-medias {
+  margin-left: 40px;
+}
+
+@media (max-width: 37.4375em) {
+  #contact .container-contact .social-medias {
+    margin-left: 0;
   }
 }
 

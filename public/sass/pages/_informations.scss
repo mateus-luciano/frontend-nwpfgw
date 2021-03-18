@@ -67,7 +67,7 @@
                     position: absolute;
                     top: 50px;
                     left: -450px;
-                    background: #f00;
+                    background: $background-form;
                     border-radius: 20px;
                     @include breakpoint(small-only) {
                         width: 320px;
@@ -103,17 +103,16 @@
 
                         .content {
                             @include flex-direction-column();
-                            width: 90%;
+                            width: 95%;
                             height: 92%;
-                            background: ivory;
                             @include breakpoint(small-only) {}
 
                             .comment {
                                 @include flex-direction-column();
                                 width: 100%;
                                 height: 160px;
-                                background: lawngreen;
                                 border-radius: 20px;
+                                background: $background-comments;
                                 margin: 6px 0;
                                 @include breakpoint(small-only) {
                                     height: 140px;
@@ -127,6 +126,7 @@
 
                                     p {
                                         font-size: 1.08em;
+                                        color: #000;
                                         @include breakpoint(small-only) {
                     
                                         }
@@ -141,7 +141,7 @@
                                     p {
                                         font-size: 1em;
                                         font-weight: 500;
-                                        color: bisque;
+                                        color: rgb(14, 60, 61);
                                         @include breakpoint(small-only) {
                                             
                                         }
@@ -161,7 +161,7 @@
                     top: -10px;
                     right: 100px;
                     transform: rotate(45deg);
-                    background: #f00;
+                    background: $background-form;
                     @include breakpoint(small-only) {
                         right: 80px;
                     }
@@ -179,7 +179,7 @@
 
                 .container-form {
                     width: 400px;
-                    height: 380px;
+                    height: 390px;
                     position: absolute;
                     top: 50px;
                     left: -250px;
@@ -197,9 +197,11 @@
                         width: inherit;
                         height: inherit;
                         border-radius: 20px;
-                        background: indigo;
+                        background: $background-form;
                         @include breakpoint(small-only) {}
-                        
+
+                     
+
                         input,
                         textarea {
                             width: 90%;
@@ -221,15 +223,16 @@
                         }
                         
                         label {
-                            font-size: 1.1em;
-                                   @include breakpoint(small-only) {}
+                            font-size: 1em;
+                            color: #000;
+                            @include breakpoint(small-only) {}
                         }
 
                         button {
                             width: 80%;
                             height: 40px;
                             background: $button-color-lighter;
-                            margin: 40px 0;
+                            margin: 20px 0;
                             border: none;
                             border-radius: 10px;
                             outline: none;
@@ -256,7 +259,7 @@
                     top: -10px;
                     right: 115px;
                     transform: rotate(45deg);
-                    background: indigo;
+                    background: $background-form;
                     @include breakpoint(small-only) {
                         top: -10px;
                         right: 30px;
