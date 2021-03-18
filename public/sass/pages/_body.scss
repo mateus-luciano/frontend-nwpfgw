@@ -38,17 +38,29 @@ body {
 }
 
 .neutral {
+    @include flex-center();
+    width: inherit;
+    height: 50px;
+    border-radius: 10px;
     background: none;
     transition: .9s;
 }
 
 .error {
+    @include flex-center();
+    width: inherit;
+    height: 50px;
+    border-radius: 10px;
     background: #f00;
     color: #000;
     transition: .5s;
 }
 
 .success {
+    @include flex-center();
+    width: inherit;
+    height: 50px;
+    border-radius: 10px;
     background: green;
     color: #000;
     transition: .9s;

@@ -11,10 +11,10 @@
 
     .fa-chevron-left {
         position: absolute;
+        cursor: pointer;
         font-size: 5em;
         top: 100px;
         left: 40px;
-        cursor: pointer;
         @include breakpoint(small-only) {
             font-size: 3em;
             left: 20px;
@@ -23,10 +23,10 @@
     
     .fa-chevron-right {
         position: absolute;
+        cursor: pointer;
         font-size: 5em;
         top: 100px;
         right: 40px;
-        cursor: pointer;
         @include breakpoint(small-only) {
             font-size: 3em;
             right: 20px;

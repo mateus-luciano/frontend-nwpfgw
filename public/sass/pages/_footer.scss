@@ -1,0 +1,25 @@
+footer {
+    @include flex-center();
+    width: 100vw;
+    height: 200px;
+    background: $background-color;
+
+    .container {
+        @include flex-center();
+        @include flex-direction-column();
+
+        h4 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.6em;
+        }
+
+        span {
+            font-size: 1em;
+            color: #aaa;
+            margin-right: 5px;
+        }
+    }
+}
