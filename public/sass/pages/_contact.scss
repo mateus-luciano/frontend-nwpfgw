@@ -251,8 +251,12 @@
 
                 p {
                     color: #fff;
-                    font-size: .78em;
+                    font-size: .9em;
                     font-weight: 500;
+                }
+
+                p:last-child {
+                    font-size: .75em;
                 }
             }
         }
