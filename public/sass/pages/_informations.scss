@@ -41,7 +41,10 @@
     .top-bar {
         @include flex-space-around();
         width: inherit;
-        background: lightcoral;
+        height: 40px;
+        background: $header-primary-color;
+        color: #fff;
+
         @include breakpoint(small-only) {}
 
         .container-comments {
@@ -273,7 +276,7 @@
         overflow: hidden;
         width: inherit;
         height: 80vh;
-        background: cadetblue;
+        background: $background-color;
         @include breakpoint(small-only) {
         
         }
