@@ -303,6 +303,7 @@
         
         img {
             width: 400px;
+            margin-right: 100px;
             @include breakpoint(small-only) {
                 width: 250px;
                 margin-bottom: 40px;
@@ -311,6 +312,7 @@
 
         h3 {
             font-size: 1.2em;
+            margin: 10px 0;
             @include breakpoint(small-only) {
                 font-size: 1.3em;
                 margin-bottom: 10px;
@@ -319,6 +321,9 @@
 
         p {
             font-size: 1em;
+            margin: 10px;        
+            font-weight: 600;
+            text-indent: 1em;
             @include breakpoint(small-only) {
                 font-size: 1.2em;
             }

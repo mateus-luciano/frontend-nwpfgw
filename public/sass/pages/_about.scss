@@ -135,6 +135,7 @@
                 
                 .more-informations {
                     p {
+                        font-size: .9em;
                         text-indent: 1.4em;
                         @include breakpoint(small-only) {}
                     }
