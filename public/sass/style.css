@@ -1883,7 +1883,7 @@ header .nav-bar p {
   background: transparent;
   border-bottom: 1px solid #000;
   font-size: .9em;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 @media (max-width: 37.4375em) {
