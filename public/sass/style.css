@@ -153,8 +153,17 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: #aaa;
+  background: url(../../images/background.jfif) no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 37.4375em) {
+  html,
+  body {
+    background: #aaa;
+  }
 }
 
 .absolute-position {
