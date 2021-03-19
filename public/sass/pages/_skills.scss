@@ -1,6 +1,6 @@
 #skills {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     font-size: $font-size;
     padding-top: 40px;
 
@@ -244,7 +244,7 @@
                 @include flex-direction-column();
                 @include flex-center();
                 width: 110px;
-                height: 700px;
+                height: 670px;
                 background: #000;
                 border-radius: 30px;
                 padding: 10px;
@@ -262,6 +262,7 @@
                     margin: 5px 0;
                     @include breakpoint(small-only) {
                         font-size: 2.6em;
+                        margin: 0 5px;
                     }
                 }
 

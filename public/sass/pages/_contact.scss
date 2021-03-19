@@ -3,13 +3,16 @@
     @include flex-direction-column();
     width: 100vw;
     height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 200px;
     font-size: $font-size;
     @include breakpoint(small-only) {}
 
    .container-contact {
        @include flex-space-around();
        width: 90%;
-       height: 60%;
+       height: 70%;
+       padding: 100px;
        background: $background-color;
        @include breakpoint(small-only) {
            @include flex-direction-column();

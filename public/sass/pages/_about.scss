@@ -96,13 +96,10 @@
                         }
                     }
                 }
-
-               
             }
         }
 
         .see-more-container {
-
             .see-more-content {
                 @include flex-direction-column();
                 padding: 20px 60px;
